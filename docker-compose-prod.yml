@@ -41,6 +41,7 @@ services:
     volumes:
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./theme:/var/www/html/wp-content/themes/theme
+      - ./uploads:/var/www/html/wp-content/uploads
     networks:
       - wpsite
 networks:
