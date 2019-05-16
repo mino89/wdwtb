@@ -35,7 +35,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: root
+      WORDPRESS_DB_PASSWORD: rootwordpress
       WORDPRESS_DB_NAME: wordpress
     working_dir: /var/www/html
     volumes:
