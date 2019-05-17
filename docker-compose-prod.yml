@@ -40,8 +40,9 @@ services:
     working_dir: /var/www/html
     volumes:
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
-      - ./theme:/var/www/html/wp-content/themes/theme
-      - ./uploads:/var/www/html/wp-content/uploads
+      - ./wp-content/themes:/var/www/html/wp-content/themes
+      - ./wp-content/uploads:/var/www/html/wp-content/uploads
+      - ./wp-content/plugins:/var/www/html/wp-content/plugins
     networks:
       - wpsite
 networks:
