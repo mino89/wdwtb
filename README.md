@@ -9,6 +9,14 @@ Make sure you have insalled these dependencies
 - [NPM](https://www.npmjs.com/get-npm).
 - [Composer](https://getcomposer.org/download/).
 
+### Set Up environment variables
+Export these three variables
+```
+export DB_ROOT_PWD="yourpassword"
+export DB_PWD="yourpassword"
+export DB_USer="youruser"
+```
+
 ## Install dependencies
 ```
 cd theme
