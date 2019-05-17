@@ -7,10 +7,10 @@ services:
       - db_data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootwordpress
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PWD}
       MYSQL_DATABASE: wordpress
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PWD}
     networks:
       - wpsite
   phpmyadmin:
@@ -22,7 +22,7 @@ services:
       - "8080:80"
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PWD}
     networks:
       - wpsite
   wordpress:
@@ -34,8 +34,8 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: rootwordpress
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_ROOT_PWD}
       WORDPRESS_DB_NAME: wordpress
     working_dir: /var/www/html
     volumes:
