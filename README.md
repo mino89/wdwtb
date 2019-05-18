@@ -14,7 +14,7 @@ Export these three variables
 ```
 export DB_ROOT_PWD="yourpassword"
 export DB_PWD="yourpassword"
-export DB_USer="youruser"
+export DB_USER="youruser"
 ```
 
 ## Install dependencies
