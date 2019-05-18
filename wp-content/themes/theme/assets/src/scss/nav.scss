@@ -1,0 +1,19 @@
+.navbar-collapse{
+    .btn{
+        @include media-breakpoint-up(md){
+            opacity: 1;
+        }
+        font-size: .8rem !important;
+        border: none !important;
+        text-transform: uppercase;
+        transition: all .3s ease;
+        will-change: opacity;
+        font-weight: 700;
+        opacity: 0;
+    }
+    &.show{
+        .btn{
+            opacity: 1;
+        }
+    }
+}

@@ -12,10 +12,7 @@
     <link href="{{ site.theme.link }}/assets/dist/app.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="container">
-    {% include 'partials/header.twig' %}
-    {% include 'partials/nav.twig' %}
-</div>
+{% include 'partials/header.twig' %}
 <main role="main" class="container">
     <div class="row">
         <div class="col-md-8 blog-main">
@@ -28,8 +25,6 @@
     </div>
 </main>
 {% include 'partials/footer.twig' %}
-
-
 <script src="{{ site.theme.link }}/assets/dist/app.js"></script>
 </body>
 </html>
