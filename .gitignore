@@ -75,4 +75,7 @@ package-lock.json
 composer.lock
 
 #default themes
-wp-content/themes/twentynineteen/
+wp-content/themes/twentynineteen
+wp-content/themes/twentyseventeen
+wp-content/themes/twentysixteen
+wp-content/themes/index.php
