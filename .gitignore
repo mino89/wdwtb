@@ -73,3 +73,6 @@ uploads/
 #lockfiles
 package-lock.json
 composer.lock
+
+#default themes
+wp-content/themes/twentynineteen/
