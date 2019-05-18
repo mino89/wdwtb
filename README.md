@@ -40,7 +40,7 @@ npm run production
 Before deploy your website remember these steps, i've tested it on Ubuntu 18.04
 You have a **docker-compose-prod.yml**, run this command
 ```
-docker-compose -f docker-compose-prod.yml up -d
+docker-compose -f docker-compose.yml -f docker-compose-prod.yml up -d
 ```
 ### Problem with uploads
 There is a problem with file uploads, i've find this workaround for the moment
