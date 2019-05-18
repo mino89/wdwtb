@@ -43,6 +43,8 @@ services:
       - ./wp-content/themes:/var/www/html/wp-content/themes
       - ./wp-content/uploads:/var/www/html/wp-content/uploads
       - ./wp-content/plugins:/var/www/html/wp-content/plugins
+      - ./wp-content/languages:/var/www/html/wp-content/languages
+
     networks:
       - wpsite
 networks:
