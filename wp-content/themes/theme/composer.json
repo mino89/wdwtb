@@ -1,6 +1,12 @@
 {
     "name": "vendor/theme",
     "type": "wordpress-theme",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
     "require": {
     "timber/timber": "*"
     },

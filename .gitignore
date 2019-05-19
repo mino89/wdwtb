@@ -81,9 +81,7 @@ wp-content/themes/twentysixteen
 wp-content/themes/index.php
 
 #default wp plugins
-wp-content/plugins/akismet
-wp-content/plugins/hello.php
-wp-content/plugins/index.php
+wp-content/plugins
 
 #wordpress languages
 wp-content/languages
