@@ -1,14 +1,22 @@
 {
-    "name": "vendor/theme",
-    "type": "wordpress-theme",
-    "repositories":[
-        {
-            "type":"composer",
-            "url":"https://wpackagist.org"
-        }
-    ],
-    "require": {
-    "timber/timber": "*"
-    },
-    "license": "MIT"
+  "name": "vendor/theme",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
     }
+  ],
+  "extra": {
+    "installer-paths": {
+      "../../plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ]
+    }
+  },
+  "require": {
+    "timber/timber": "*",
+    "wpackagist-plugin/advanced-custom-fields": "*",
+    "wpackagist-plugin/wordpress-importer": "*"
+  },
+  "license": "MIT"
+}
